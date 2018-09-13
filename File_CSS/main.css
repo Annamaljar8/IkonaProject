@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+}
+hr {
+  border: 2px solid #ffffff;
+  width: 100px;
+}
+header{
+  position: absolute;
+  left:0;
+  right:0;
+  clear:both;
+}
+.name{
+  font-size: 4em;
+  color: #b7bc00;
+  font-weight: 900;
+  margin: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+color: rgb(248, 235, 235);
+}
+.bg-light {
+    background-color: #f8f9fa00 !important
+  }
+.navbar-light .navbar-brand {
+    color: rgba(249, 241, 241, 0.9);
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(249, 249, 244);
+}
+.navigation ul{
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  color:#ffffff;
+}
+.navigation li{
+  display: inline-block;
+  }
+.navigation a{
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5em;
+  color: #efcb0a;
+}
+.intro{
+  background: url(../Icona_Image/profil2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 10em 0;
+  color:#ffffff;
+}
+.content-intro{
+  margin-top: 8em;
+  overflow: auto;
+}
+.content-intro h1{
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+.content-intro span{
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+}
+.button-intro{
+  padding: 0.5em 2em;
+  margin-top: 1em;
+  background: #b7bc00;
+  color: #ffffff;
+  font-weight: 400;
+  border: 2px solid #b7bc00;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.button-intro:hover{
+  background: #ffffff;
+  color: #b7bc00;
+  border: 2px solid #b7bc00;
+}
+.icona-work{
+  padding: 5em 0;
+  overflow: auto;
+}
+.icona-work h4{
+  color: #b7bc00;
+}
+.content-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+.col-narrow{
+  float: left;
+  overflow: hidden;
+  margin-top: 2em;
+  clear: both;
+  text-align: left;
+}
+.col-narrow h2, h3, p{
+  margin: 5px 0;
+}
+.col-wide{
+  width: 70%;
+  float: right;
+  text-align: left;
+  overflow: hidden;
+  margin-top: 2em;
+}
+.social-icons{
+  list-style: none;
+  padding: 0;
+}
+.social-icons li{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+}
+.social-icons a{
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1px solid #444444;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  color: #444444;
+  transition: all 0.2s ease-in;
+}
+.social-icons a:hover{
+  color: #b7bc00;
+  border: 1px solid #b7bc00;
+}
+.icone-school{
+  padding: 5em 0;
+  background: url(../Icona_Image/importance2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  overflow: auto;
+}
+.contact-me{
+  padding: 5em 0;
+  overflow: auto;
+}
+.footer{
+  background: #000000;
+  padding: 5em 0;
+  color: #ffffff;
+  overflow: auto;
+}
