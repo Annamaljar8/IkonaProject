@@ -95,6 +95,9 @@ color: rgb(248, 235, 235);
 .icona-work h4{
   color: #b7bc00;
 }
+.icona-button{
+  margin-right: 50px;
+}
 .content-wrap{
   width: 90%;
   margin: 0 auto;
