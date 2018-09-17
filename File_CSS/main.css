@@ -97,10 +97,12 @@ color: rgb(248, 235, 235);
 }
 .icona-button{
   margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 .content-wrap{
   width: 90%;
-  margin: 0 auto;
+
 }
 .col-narrow{
   float: left;
@@ -113,11 +115,15 @@ color: rgb(248, 235, 235);
   margin: 5px 0;
 }
 .col-wide{
-  width: 70%;
+  width: 90%;
   float: right;
   text-align: left;
   overflow: hidden;
   margin-top: 2em;
+}
+.slide-icone{
+  height: auto;
+  width: auto;
 }
 .social-icons{
   list-style: none;
