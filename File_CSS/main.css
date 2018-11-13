@@ -1,9 +1,22 @@
-* {
-  box-sizing: border-box;
+:root{
+  --smokyBlack:#220901;
+  --frenchPuce:#621708;
+  --rufous:#941b0c;
+  --rust: #bc3908;
+  --brightYellow:#f6aa1c;
 }
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
 body {
+  color: #621708;
   font-family: 'Philosopher', sans-serif;
   text-align: center;
+  background: url('../Icona_Image/bodyBcg.jpeg');
+
 }
 hr {
   border: 2px solid #ffffff;
@@ -21,17 +34,39 @@ header{
   font-weight: 900;
   margin: 0;
 }
-.navbar-light .navbar-nav .nav-link {
-color: rgb(248, 235, 235);
+
+.navbar-nav .navbar-light .navbar-brand {
+  background-color: #bc3908!important;
 }
-.bg-light {
-    background-color: #f8f9fa00 !important
-  }
-.navbar-light .navbar-brand {
-    color: rgba(249, 241, 241, 0.9);
+.bg-light{
+    background-color: #f6aa1c!important;
 }
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: rgb(249, 249, 244);
+ .nav-item .nav-link{
+color:  #bc3908!important;
+}
+.nav-item:hover{
+  background: #621708 ;
+  color:#f6aa1c;
+}
+.dropdown-menu{
+  background-color: #f6aa1c;
+}
+.dropdown-item:hover{
+  background: #621708 ;
+  color:#f6aa1c;
+  padding-left: 1.2rem;
+}
+.collapse.show{
+text-align: left;
+}
+.dropdown.show{
+
+}
+.navigation{
+  height: 100%;
+  width: 100%;
+  background: var(--brightYellow);
+  z-index: 3;
 }
 .navigation ul{
   list-style: none;
@@ -47,7 +82,14 @@ color: rgb(248, 235, 235);
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.5em;
-  color: #efcb0a;
+  color: #bc3908;
+}
+/*carousel*/
+.content-wrap{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
 }
 .intro{
   background: url(../Icona_Image/profil2.jpg);
@@ -102,6 +144,7 @@ color: rgb(248, 235, 235);
 }
 .content-wrap{
   width: 90%;
+
 
 }
 .col-narrow{
