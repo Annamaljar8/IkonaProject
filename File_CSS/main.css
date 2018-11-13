@@ -22,11 +22,9 @@ hr {
   border: 2px solid #ffffff;
   width: 100px;
 }
-header{
-  position: absolute;
-  left:0;
-  right:0;
-  clear:both;
+.header{
+  height:100vh;
+  position:relative;
 }
 .name{
   font-size: 4em;
@@ -86,9 +84,19 @@ text-align: left;
 }
 /*carousel*/
 .content-wrap{
-  position:absolute;
-  width: 100%;
+  position: absolute;
+  width: 100%!important;
   height: 100%;
+
+}
+.col-wide{
+  width: 100%!important;
+  height: 100%;
+  z-index: -1;
+float: none!important;
+text-align: center;
+overflow: hidden;
+margin-top: 0!important;
 
 }
 .intro{
