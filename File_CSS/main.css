@@ -190,6 +190,11 @@ text-align: left;
   font-weight: bold;
   text-transform: uppercase;
 }
+.icona-button:hover{
+  color: #f6aa1c;
+  background-color:#bc3908;
+  border: 0,2rem solid #941b0c;
+}
 
 .col-narrow{
   float: left;
