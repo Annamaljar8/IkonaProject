@@ -22,16 +22,30 @@ hr {
   border: 2px solid #ffffff;
   width: 100px;
 }
+ h1{
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.5em;
+}
+@media (max-width: 768px){
+  h1{
+   font-size: 1.5em;
+   font-weight: bold;
+   text-transform: uppercase;
+   padding: 0.5em;
+ }
+}
 .header{
   height:100vh;
   position:relative;
 }
-.name{
+/*.name{
   font-size: 4em;
   color: #b7bc00;
   font-weight: 900;
   margin: 0;
-}
+}*/
 
 .navbar-nav .navbar-light .navbar-brand {
   background-color: #bc3908!important;
@@ -84,22 +98,39 @@ text-align: left;
 }
 /*carousel*/
 .content-wrap{
-  position: absolute;
   width: 100%!important;
   height: 100%;
+}
+.carousel-item{
+  height: 100%;
+  width: 100%
+}
+@media (max-width: 768px){
+  .header{
+    background-image: url("../Icona_Image/importance1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.col-wide{
+  height: 80%!important;}
+}
 
+.carousel{
+  position: static;
 }
 .col-wide{
   width: 100%!important;
   height: 100%;
   z-index: -1;
-float: none!important;
-text-align: center;
-overflow: hidden;
-margin-top: 0!important;
-
+  position: absolute;
+  float: none!important;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 0!important;
 }
-.intro{
+/*.intro{
   background: url(../Icona_Image/profil2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,11 +168,15 @@ margin-top: 0!important;
   background: #ffffff;
   color: #b7bc00;
   border: 2px solid #b7bc00;
-}
+}*/
 .icona-work{
   padding: 5em 0;
   overflow: auto;
 }
+@media (max-width:768px){
+  .icona-work{
+    padding: 0;
+}}
 .icona-work h4{
   color: #b7bc00;
 }
@@ -149,12 +184,13 @@ margin-top: 0!important;
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 20px;
+  color: #bc3908;
+  background-color: #f6aa1c;
+  border-color: #941b0c;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.content-wrap{
-  width: 90%;
 
-
-}
 .col-narrow{
   float: left;
   overflow: hidden;
@@ -165,13 +201,8 @@ margin-top: 0!important;
 .col-narrow h2, h3, p{
   margin: 5px 0;
 }
-.col-wide{
-  width: 90%;
-  float: right;
-  text-align: left;
-  overflow: hidden;
-  margin-top: 2em;
-}
+
+
 .slide-icone{
   height: auto;
   width: auto;
