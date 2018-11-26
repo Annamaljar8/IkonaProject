@@ -226,15 +226,61 @@ text-align: left;
 .work-item__icon{
   position: absolute;
   color: var(--brightYellow);
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 45%;
   display: inline-block;
   font-size: 4rem;
   text-decoration: none;
   transition: all 0.5s ease;
-  transform: scale(0);
+  transform: scale(1);
+  width: 20px;
+  height: 20px;
 }
+.work-item__icon:hover{
+  color:#bc3908;
 
+}
+/*modal*/
+.work-modal__show{
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 999;
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+}
+.work-modal{
+  display: none;
+}
+.work-modal__item{
+  background: url('../Icona_Image/icona_work_8.jpg') center / cover;
+  height: 80vh;
+  width: 40vw;
+  border: 0.5rem solid var(--brightYellow);
+  border-radius: 0.4rem;
+}
+@media (max-width: 768px){
+  .work-modal__item{
+    height: 70vh;
+    width: 80vw;
+}}
+.work-modal__close{
+  position: fixed;
+  font-size: 3rem;
+  color: var(--rust);
+  bottom: 5%;
+  right: 5%;
+  transition: color 0.5s linear;
+  cursor:pointer;
+  text-decoration: none;
+}
+.work-modal__close:hover{
+  color: red;
+}
 .col-narrow{
   float: left;
   overflow: hidden;
