@@ -16,14 +16,14 @@ body {
   font-family: 'Philosopher', sans-serif;
   text-align: center;
   background: url('../Icona_Image/bodyBcg.jpg');
-
-
-
+}
+p{
+  color: var(--rufous);
 }
 hr {
   border: 2px solid #ffffff;
-  width: 200px;
-  margin-left: 45%;
+  width: 215px;
+  margin-left: 42%;
   margin-top: 0;
 }
 @media (max-width: 575.98px){
@@ -409,18 +409,18 @@ width: 100%
 .social-icons a{
   font-size: 16px;
   border-radius: 50%;
-  border: 1px solid #444444;
+  border: 1px solid var(--rust);
   width: 40px;
   height: 40px;
   display: block;
   text-align: center;
   line-height: 40px;
-  color: #444444;
+  color:var(--rust);
   transition: all 0.2s ease-in;
 }
 .social-icons a:hover{
-  color: #b7bc00;
-  border: 1px solid #b7bc00;
+  color: var(--brightYellow);
+  border: 1px solid var(--brightYellow);
 }
 .icone-school{
   padding: 5em 0;
