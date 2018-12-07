@@ -30,6 +30,7 @@ hr {
 hr {
 margin-left: 35%;
 margin-top: 0;
+width: 100px;
 }}
  h1{
   font-size: 2em;
@@ -48,6 +49,9 @@ margin-top: 0;
 .header{
   height:100vh;
   position:relative;
+}
+.header-order{
+  height: 90vh;
 }
 /*.name{
   font-size: 4em;
@@ -139,45 +143,7 @@ text-align: left;
   overflow: hidden;
   margin-top: 0!important;
 }
-/*.intro{
-  background: url(../Icona_Image/profil2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 10em 0;
-  color:#ffffff;
-}
-.content-intro{
-  margin-top: 8em;
-  overflow: auto;
-}
-.content-intro h1{
-  font-size: 2em;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 1.5em;
-}
-.content-intro span{
-  font-size: 12px;
-  font-weight: 400;
-  display: block;
-  margin-top: 10px;
-}
-.button-intro{
-  padding: 0.5em 2em;
-  margin-top: 1em;
-  background: #b7bc00;
-  color: #ffffff;
-  font-weight: 400;
-  border: 2px solid #b7bc00;
-  text-transform: uppercase;
-  transition: all 0.2s linear;
-}
-.button-intro:hover{
-  background: #ffffff;
-  color: #b7bc00;
-  border: 2px solid #b7bc00;
-}*/
+
 .icona-work{
   padding: 5em 0;
   overflow: auto;
@@ -426,7 +392,7 @@ width: 100%
   padding: 5em 0;
   background: url(../Icona_Image/importance2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  bakground-size: cover;
   background-position: center center;
   color: #ffffff;
   overflow: auto;
@@ -440,4 +406,55 @@ width: 100%
   padding: 5em 0;
   color: #ffffff;
   overflow: auto;
+}
+
+/*order icona section*/
+.order{
+  background: var(--frenchPuce);
+  color: var(--brightYellow);
+  text-transform: capitalize;
+}
+.order-form{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+  align-items: center;
+}
+.order-form__feedback{
+  border: 0.1rem solid var(--brightYellow);
+  padding: 0.25rem;
+  width: 50%;
+  display: none;
+}
+.error{
+  display:block;
+  color: red;
+  border-color: red;
+}
+.success{
+  display:block;
+  color: green;
+  border-color:green;
+}
+.order-form__title{
+  font-size: 3rem;
+  padding: 2rem;
+}
+.order-form__input{
+  width: 100%;
+}
+.input-name, .input-lastname, .input-email, .textarea{
+width: 50%;
+}
+.input-name, .input-lastname, .input-email, .textarea, .input-submit{
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(246, 231, 130, 0.97);
+  color: var(--frenchPuce);
+  border: none;
+  outline: none;
 }
