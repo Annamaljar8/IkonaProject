@@ -113,6 +113,8 @@ text-align: left;
 .content-wrap{
   width: 100%!important;
   height: 100%;
+  position: fixed;
+  padding-top: 1rem;
 }
 .carousel-item{
   height: 100%;
@@ -439,6 +441,9 @@ width: 100%
   color: green;
   border-color:green;
 }
+.order-container{
+  padding-bottom: 2.5rem;
+}
 .order-form__title{
   font-size: 3rem;
   padding: 2rem;
@@ -449,6 +454,14 @@ width: 100%
 .input-name, .input-lastname, .input-email, .textarea{
 width: 50%;
 }
+@media (max-width: 768px){
+  .header-order {
+      height: 100vh;
+  }
+  .input-name, .input-lastname, .input-email, .textarea{
+  width: 70%;
+  }
+}
 .input-name, .input-lastname, .input-email, .textarea, .input-submit{
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -457,4 +470,36 @@ width: 50%;
   color: var(--frenchPuce);
   border: none;
   outline: none;
+}
+.input-name::placeholder, .input-lastname::placeholder, .input-email::placeholder,
+ .textarea::placeholder{
+  color: var(--frenchPuce);
+  text-transform: capitalize;
+}
+
+.input-submit{
+  background: var(--brightYellow);
+  color: var(--smokyBlack);
+  transition: all 0.5s linear;
+  cursor: pointer;
+  text-transform: uppercase;
+  }
+  .input-submit:hover{
+    opacity: 0.9;
+  }
+
+/*venchalny icony*/
+
+.venchalny-container{
+  margin-left: 4rem;
+  margin-right: 4rem;
+
+  padding: 2rem;
+  width: 90%;
+}
+.venchalny{
+  width: 100%;
+}
+.section-title__text{
+  margin-bottom: 4rem;
 }
