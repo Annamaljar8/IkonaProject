@@ -50,15 +50,7 @@ width: 100px;
   height:100vh;
   position:relative;
 }
-.header-order{
-  height: 90vh;
-}
-/*.name{
-  font-size: 4em;
-  color: #b7bc00;
-  font-weight: 900;
-  margin: 0;
-}*/
+
 
 .navbar-nav .navbar-light .navbar-brand {
   background-color: #bc3908!important;
@@ -111,9 +103,7 @@ text-align: left;
 }
 /*carousel*/
 .content-wrap{
-  width: 100%!important;
-  height: 100%;
-  position: fixed;
+
   padding-top: 1rem;
 }
 .carousel-item{
@@ -455,10 +445,7 @@ width: 100%
 width: 50%;
 }
 @media (max-width: 768px){
-  .header-order {
-      height: 100vh;
-  }
-  .input-name, .input-lastname, .input-email, .textarea{
+    .input-name, .input-lastname, .input-email, .textarea{
   width: 70%;
   }
 }
@@ -491,15 +478,19 @@ width: 50%;
 /*venchalny icony*/
 
 .venchalny-container{
-  margin-left: 4rem;
-  margin-right: 4rem;
+    padding: 2rem;
 
-  padding: 2rem;
-  width: 90%;
 }
 .venchalny{
   width: 100%;
 }
 .section-title__text{
   margin-bottom: 4rem;
+  text-align: justify;
+}
+.card-img_show{
+  height: 350px;
+}
+.card-desk_special{
+  padding-top: 3rem;
 }
