@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/order', function () {
+    return view('order_icona');
+});

@@ -32,7 +32,7 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ url("/") }}">Главная <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,13 +56,17 @@
         </div>
       </li>
           <li class="nav-item active">
-      <a class="nav-link" href="order_icona.html">Заказать работу<span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="{{ url("order") }}">Заказать работу<span class="sr-only">(current)</span></a>
     </li>
   </ul>
   </div>
 </nav>
 <!--<div class="content-wrap">-->
-<!--carousel-->
+
+    </div>
+
+  </header>
+  <!--carousel-->
   <div class="col-wide">
     <div id="carouselExampleIndicators" class="carousel slide slide-icone" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -101,9 +105,6 @@
         <li><a href="#"><ion-icon name="mail"></ion-icon></a></li>
       </ul>
     </nav>
-    </div>
-
-  </header>
   <!--Intro-->
   <!--<section class="intro">
     <div class="content-intro">
