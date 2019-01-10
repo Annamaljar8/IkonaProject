@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('/order', function () {
     return view('order_icona');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
