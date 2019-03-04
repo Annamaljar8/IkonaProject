@@ -8,7 +8,7 @@
   <title>Икона</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--<link href="../File_CSS/normalize.css" rel="stylesheet">-->
-  <link href="../File_CSS/main.css" rel="stylesheet">
+  <link href="File_CSS/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/font-awesome.min.css">
@@ -22,27 +22,34 @@
   <header class="header" id="header">
     <div class="content">
       <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="index.html">
            <ion-icon name="color-palette" width="30" height="30" class="d-inline-block align-top"></ion-icon>
-           ИС "СПАС"
+           ИМ "СПАС"
          </a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Иконописная мастерская "Спас" <span class="sr-only">(current)</span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">О нас</a>
+          <a class="dropdown-item" href="#">Этапы создания иконы</a>
+          <a class="dropdown-item" href="#">Интересные статьи</a>
+          <a class="dropdown-item" href="File_HTML/zakazac_icona.html">Как заказать икону</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Иконы
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Венчальные Иконы</a>
-          <a class="dropdown-item" href="#">Именные Иконы</a>
-          <a class="dropdown-item" href="#">Мерные Иконы</a>
-          <a class="dropdown-item" href="#">Храмовые Иконы</a>
+          <a class="dropdown-item" href="File_HTML/venchalny_icony.html">Венчальные Иконы</a>
+          <a class="dropdown-item" href="File_HTML/imenny_icony.html">Именные Иконы</a>
+          <a class="dropdown-item" href="File_HTML/merny_icony.html">Мерные Иконы</a>
+          <a class="dropdown-item" href="File_HTML/hram_icony.html">Храмовые Иконы</a>
+          <a class="dropdown-item" href="File_HTML/hram_rospisi.html">Храмовая Роспись</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -50,19 +57,22 @@
           Иконописная Школа "Зограф"
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Про Нас</a>
+          <a class="dropdown-item" href="#">О Нас</a>
           <a class="dropdown-item" href="#">Работы Учеников</a>
           <a class="dropdown-item" href="#">Aбитуриенту</a>
         </div>
       </li>
           <li class="nav-item active">
-      <a class="nav-link" href="order_icona.html">Заказать работу<span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="File_HTML/order_icona.html">Заказать работу<span class="sr-only">(current)</span></a>
     </li>
   </ul>
   </div>
 </nav>
-<!--<div class="content-wrap">-->
-<!--carousel-->
+ </div>
+</header>
+
+<!--Intro carousel-->
+<section class="intro">
   <div class="col-wide">
     <div id="carouselExampleIndicators" class="carousel slide slide-icone" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -72,13 +82,13 @@
       </ol>
        <div class="carousel-inner">
          <div class="carousel-item active">
-           <img class="d-block w-100" src="../Icona_Image/importance1.jpg" alt="Первый слайд">
+           <img class="d-block w-100" src="Icona_Image/importance1.jpg" alt="Первый слайд">
          </div>
          <div class="carousel-item">
-           <img class="d-block w-100" src="../Icona_Image/profil1.jpg" alt="Второй слайд">
+           <img class="d-block w-100" src="Icona_Image/profil1.jpg" alt="Второй слайд">
          </div>
          <div class="carousel-item">
-           <img class="d-block w-100" src="../Icona_Image/profil2.jpg" alt="Третий слайд">
+           <img class="d-block w-100" src="Icona_Image/profil2.jpg" alt="Третий слайд">
          </div>
        </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,8 +101,7 @@
            </a>
       </div>
 </div>
-<!--</div>-->
-    <h1 class="name">Ксения Спасская</h1>
+    <h1 class="name">Иконописная мастерская "Спас"</h1>
     <nav class="social-icons">
       <ul>
         <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -101,32 +110,46 @@
         <li><a href="#"><ion-icon name="mail"></ion-icon></a></li>
       </ul>
     </nav>
-    </div>
-
-  </header>
-  <!--Intro-->
-  <!--<section class="intro">
-    <div class="content-intro">
-      <h1>ЗДЕСЬ МОЖНО ВСТАВИТЬ СВОЮ ТОЧКУ ЗРЕНИЯ<span>которая характеризует тебя</span></h1>
-      <button class="button-intro">Мои Работы</button>
-    </div>
-  </section>-->
+</section>
+<!--Icona Workshop Spas-->
+<section class="icona-section">
+  <div class="container">
+    <h1>Иконописная мастерская "Спас"</h1>
+    <div class="row  row-button">
+    <a class="btn  icona-button" href="#" role="button">О нас</a>
+    <a class="btn icona-button" href="#" role="button">Этапы создания иконы</a>
+    <a class="btn icona-button" href="#" role="button">Интересные статьи</a>
+    <a class="btn icona-button" href="File_HTML/zakazac_icona.html" role="button">Как заказать икону</a>
+  </div>
+  <h4 class="m-3">О Мастерской "Спас"</h4>
+  <p > Наша мастерская начала свою работу в 2011 году с приездом московского специалиста, возглавившего ее в то время.</p>
+<p >Мастера в своих работах стараются наиболее максимально выразить громаднейший опыт всех предыдущих поколений иконописцев как византийской, так и древнерусской школ.</p>
+<p >С первых дней своего существования в мастерской, помимо создания образов, осуществлялось обучение начинающих иконописцев. Сейчас это уже иконописная школа "Зограф", которая подготавливает всех желающих к подвигу иконописная.Древние технологии иконописания были со временем утрачены, так как все новое казалось более красивым и прогрессивным. Однако, в начале ХХ века, когда появились первые понятия о реставрационной работе, древняя икона засияла в новом цвете, ей была дана новая жизнь. И тогда общество увидело, что оно в своем стремлении к прогрессу и усовершенствованию попятилось далеко назад. Люди, считавшие каноном красоты барокко и реалистичную живопись эпохи Возрождения, были поражены прекрасными линиями, силой и звучанием натуральных природных пигментов, скрытых под слоями копоти, которые они увидели в древней, раскрытой вновь, иконе. И все представления о архаичном искусстве христиан предыдущих эпох пошатнулись. Люди увидели, что им долго и упорно нужно работать, чтоб достичь чистоты и совершенства иконописцев Х – ХV вв.
+</p>
+<p >Так, знаменитый художник ХIХ в. В.Васнецов, в конце своей жизни, после грандиозной работы по росписи Владимирского собора в Киеве, сказал такие слова: «Я сам думал, что я проник в дух русской иконы и что я выразил внутренний мир живописца того времени, что я постиг ― это уже от гордости ― технику этого старого времени. Оказалось, однако, что я глубоко заблуждался. Дух древней русской иконы оказался во много раз выше, чем я думал. Внутренний мир живописи того времени был гораздо более богатым в духовном смысле, чем дух нашего времени, или лично мой, или Нестерова, и нам далеко до их техники, до их живописного эффекта".
+Грандиозная работа реставраторов дала возможность миру увидеть икону той, какой она была задумана при своем создании. И тогда стали древние утраченные технологии по крупицам восстанавливаться мастерами-иконописцами. Именно эти технологии наши мастера используют при создании священных образов.</p>
+<p>Каждая икона проходит свой путь рождения: создание доски в руках столяра, покрытие десятками слоев грунта, работа мастера-иконописца натуральными красками. По окончании написания икона ждет несколько месяцев, прежде чем ее покроют олифой. И ни в коем случае не допускается спешка, каждая операция совершается с молитвой, чтобы образ стал действительно святым. Поэтому в нашей мастерской время на создание иконы – от полугода до 9 месяцев.</p>
+ <p >В нашем регионе каноническая православная икона только начинает свое развитие. Еще не до конца поняты и приняты нашими людьми простота линий, чистота и сила цвета натуральных пигментов, созданных Богом. Многие люди пока умеют видеть лишь красоту внешнюю с ее искусственными расцветками и пышной имитацией золота.Поэтому задачей наших мастеров есть не только написание канонического образа, но и общение с людьми. И те, кто этого желают, получают ответы на интересующие вопросы. Мы не только пишем икону, но и помогаем человеку, при его на то желании, посмотреть на православную каноническую икону внутренним взором молящейся души. И увидеть в ней красоту духовную, истинную, показанную посредством иконописного языка, складывавшегося тысячелетиями трудами превосходных иконописцев, рукою которых водил Дух Святой.</p>
+<p >В нашей мастерской вы можете заказать иконы именные, мерные, семейные, венчальные, храмовые и получить ответ на волнующий вас вопрос, касающийся иконописи.</p>
+  </div>
+</section>
 
   <!--Icona Work-->
-  <section class="icona-work">
+  <section class="">
+    <div class="container">
     <h1>Иконы</h1>
-    <div>
-    <a class="btn  icona-button" href="#" role="button">Венчальные Иконы</a>
-    <a class="btn icona-button" href="#" role="button">Именные Иконы</a>
-    <a class="btn icona-button" href="#" role="button">Мерные Иконы</a>
-    <a class="btn icona-button" href="#" role="button">Храмовые Иконы</a>
-    <a class="btn icona-button" href="#" role="button">Росписи</a>
+    <div class="row  row-button">
+      <a class="btn  icona-button" href="File_HTML/venchalny_icony.html" role="button">Венчальные иконы</a>
+      <a class="btn icona-button" href="File_HTML/merny_icony.html" role="button">Мерные иконы</a>
+      <a class="btn icona-button" href="File_HTML/imenny_icony.html" role="button">Именные иконы</a>
+      <a class="btn icona-button" href="File_HTML/hram_icony.html" role="button">Храмовые иконы</a>
+      <a class="btn icona-button" href="File_HTML/hram_rospisi.html" role="button">Храмовые росписи</a>
   </div>
     <h4>Ксения Спасская - Регент хора и руководитель иконописной школы "Зограф" в Українська Православна Церква</h4>
     <div class="work-container">
       <!--Single work item-->
       <div class="work-item item-1 ">
-        <img src="../Icona_Image/icona_work_1.jpg" alt="" class="work-item__img">
+        <img src="Icona_Image/icona_work_1.jpg" alt="" class="work-item__img">
         <a href="" class="work-item__icon" data-id="1">
         <ion-icon name="search"></ion-icon>
         </a>
@@ -134,7 +157,7 @@
       <!--end of single work item-->
       <!--Single work item-->
       <div class="work-item item-2 ">
-        <img src="../Icona_Image/icona_work_2.jpg" alt="" class="work-item__img">
+        <img src="Icona_Image/icona_work_2.jpg" alt="" class="work-item__img">
         <a href="" class="work-item__icon" data-id="2">
         <ion-icon name="search"></ion-icon>
         </a>
@@ -143,7 +166,7 @@
       <!--Single work item-->
       <div class="work-item item-3">
 
-        <img src="../Icona_Image/icona_work_3.jpg" alt="" class="work-item__img">
+        <img src="Icona_Image/icona_work_3.jpg" alt="" class="work-item__img">
         <a href="" class="work-item__icon" data-id="3">
           <ion-icon name="search"></ion-icon>
 
@@ -152,7 +175,7 @@
       <!--end of single work item-->
       <!--Single work item-->
       <div class="work-item item-4">
-        <img src="../Icona_Image/icona_work_4.jpg" alt="" class="work-item__img">
+        <img src="Icona_Image/icona_work_4.jpg" alt="" class="work-item__img">
         <a href="" class="work-item__icon" data-id="4">
         <ion-icon name="search"></ion-icon>
         </a>
@@ -160,7 +183,7 @@
 
     <!--Single work item-->
     <div class="work-item item-5">
-      <img src="../Icona_Image/icona_work_5.jpg" alt="" class="work-item__img">
+      <img src="Icona_Image/icona_work_5.jpg" alt="" class="work-item__img">
       <a href="" class="work-item__icon" data-id="5">
       <ion-icon name="search"></ion-icon>
       </a>
@@ -168,7 +191,7 @@
 
   <!--Single work item-->
   <div class="work-item item-6">
-    <img src="../Icona_Image/icona_work_6.jpg" alt="" class="work-item__img">
+    <img src="Icona_Image/icona_work_6.jpg" alt="" class="work-item__img">
     <a href="" class="work-item__icon" data-id="6">
       <ion-icon name="search"></ion-icon>
     </a>
@@ -176,7 +199,7 @@
 
 <!--Single work item-->
 <div class="work-item item-7">
-  <img src="../Icona_Image/icona_work_7.jpg" alt="" class="work-item__img">
+  <img src="Icona_Image/icona_work_7.jpg" alt="" class="work-item__img">
   <a href="" class="work-item__icon" data-id="7">
     <ion-icon name="search"></ion-icon>
   </a>
@@ -184,7 +207,7 @@
 
 <!--Single work item-->
 <div class="work-item item-8">
-  <img src="../Icona_Image/icona_work_8.jpg" alt="" class="work-item__img">
+  <img src="Icona_Image/icona_work_8.jpg" alt="" class="work-item__img">
   <a href="" class="work-item__icon" data-id="8">
     <ion-icon name="search"></ion-icon>
   </a>
@@ -198,34 +221,35 @@
       <ion-icon name="close-circle"></ion-icon>
       </div>
     </div>
+  </div>
   </section>
 
   <!--About Icone School-->
   <section>
+    <div class="container">
     <h1>Иконописная школа "Зограф"</h1>
-      <div>
-      <a class="btn icona-button" href="#" role="button">Про нас</a>
+      <div class="row   row-button">
+      <a class="btn icona-button" href="#" role="button">О нас</a>
       <a class="btn icona-button" href="#" role="button">Работы учеников</a>
       <a class="btn icona-button" href="#" role="button">Абитуриенту</a>
     </div>
     <div class="about-container " id="about">
 
         <!--About-->
-  <!--div class="col">
+
     <!--first child-->
     <div class="section-title">
-      <!--<h1>Иконописная школа "Зограф"</h1>
-      <hr>-->
+
       <p class="section-title__text"> Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году. Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году. Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.Школа была открыта в 2018 году.</p>
     </div>
     <!--second child-->
     <div class="about__img">
-      <img src="../Icona_Image/importance1.jpg" class="about__img-item" alt="about__img">
+      <img src="Icona_Image/importance1.jpg" class="about__img-item" alt="about__img">
     </div>
 
   <!--end about-->
-  <!--About--
-<div class="col">
+  <!--About-->
+
 <!--first child-->
 <div class="section-title ">
 <h1>Иконописная школа "Зограф"</h1>
@@ -234,14 +258,14 @@
 </div>
 <!--second child-->
 <div class="about__img-special">
-<img src="../Icona_Image/importance2.jpg" class="about__img-item  " alt="about__img">
+<img src="Icona_Image/importance2.jpg" class="about__img-item  " alt="about__img">
 </div>
-<!--/div>
 <!--end about-->
+</div>
 </div>
   </section>
   <!--Contact Me-->
-<section class="contact-me">
+ <section class="contact-me">
       <h1>Контакты</h1>
     <div class="contact-container">
 <iframe class="contact-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A064c5195e4b24c40419b3a139709df3517b0e5100ea8a3569f84cbd238658600&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
@@ -297,14 +321,15 @@
     </div>
 </section>
 <!--Footer-->
-<foote class="footer">
+<footer class="footer">
   <div class="content-wrap">
     <p>KharitonIT 2018</p>
     <hr>
 
   </div>
 </footer>
-<script src="../File_JS/logic.js"></script>
+<script src="File_JS/logic.js"></script>
+
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

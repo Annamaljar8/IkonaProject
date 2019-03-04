@@ -3,7 +3,7 @@ function eventListeners(){
   const ui=new UI;
 
 //submit the form
-document.querySelector(".order-form").addEventListener('submit',function(event){
+document.querySelector('.order-form').addEventListener('submit',function(event){
   event.preventDefault();
   const name=document.querySelector('.input-name').value;
   const lastname=document.querySelector('.input-lastname').value;

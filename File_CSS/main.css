@@ -16,9 +16,23 @@ body {
   font-family: 'Philosopher', sans-serif;
   text-align: center;
   background: url('../Icona_Image/bodyBcg.jpg');
+  background-color: rgba(216, 200, 173, 0.87);
+  background-blend-mode: soft-light;
 }
 p{
   color: var(--rufous);
+  text-align: center;
+  font-size: larger;
+}
+.text{
+  color: var(--rufous);
+  text-align: start;
+  font-size: larger;
+  list-style: none;
+}
+.icon{
+  margin-right: 2%;
+  color: var(--smokyBlack);
 }
 hr {
   border: 2px solid #ffffff;
@@ -47,7 +61,7 @@ width: 100px;
  }
 }
 .header{
-  height:100vh;
+  height:10vh;
   position:relative;
 }
 
@@ -101,9 +115,11 @@ text-align: left;
   padding: 0.5em;
   color: #bc3908;
 }
-/*carousel*/
+/*Intro-carousel*/
+.intro{
+  height: 90vh;
+}
 .content-wrap{
-
   padding-top: 1rem;
 }
 .carousel-item{
@@ -111,7 +127,7 @@ text-align: left;
   width: 100%
 }
 @media (max-width: 768px){
-  .header{
+  .intro{
     background-image: url("../Icona_Image/importance1.jpg");
     background-position: center;
     background-size: cover;
@@ -136,21 +152,22 @@ text-align: left;
   margin-top: 0!important;
 }
 
-.icona-work{
-  padding: 5em 0;
+.icona-section{
+  padding-top:5em;
   overflow: auto;
 }
+.row-button{
+  justify-content: space-evenly;
+}
 @media (max-width:768px){
-  .icona-work{
+  .icona-section{
     padding: 0;
 }}
 .icona-work h4{
   color: #b7bc00;
 }
 .icona-button{
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #bc3908;
   background-color: #f6aa1c;
   border-color: #941b0c;
@@ -224,15 +241,15 @@ text-align: left;
 }
 .work-modal__item{
   background: url('../Icona_Image/icona_work_8.jpg') center / cover;
-  height: 80vh;
-  width: 40vw;
+  height: 80%;
+  width: 60%;
   border: 0.5rem solid var(--brightYellow);
   border-radius: 0.4rem;
 }
 @media (max-width: 768px){
   .work-modal__item{
-    height: 70vh;
-    width: 80vw;
+    height: 70%;
+    width: 80%;
 }}
 .work-modal__close{
   position: fixed;
@@ -394,8 +411,7 @@ width: 100%
   overflow: auto;
 }
 .footer{
-  background: #000000;
-  padding: 5em 0;
+
   color: #ffffff;
   overflow: auto;
 }
@@ -489,8 +505,16 @@ width: 50%;
   text-align: justify;
 }
 .card-img_show{
-  height: 350px;
+  height: 70%;
 }
 .card-desk_special{
   padding-top: 3rem;
+}
+.btn_card{
+  color: var(--rust);
+  border-color: var(--rufous);
+  width: 100%;
+}
+.btn_card:hover{
+  background-color: var(--rust);
 }
