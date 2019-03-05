@@ -21,16 +21,26 @@ body {
 }
 p{
   color: var(--rufous);
-  text-align: center;
-  font-size: larger;
-}
-.text{
-  color: var(--rufous);
   text-align: start;
+  text-indent: 20px;
   font-size: larger;
   list-style: none;
 }
-.icon{
+.text{
+  color: var(--rufous);
+  text-align: center;
+  font-size: larger;
+
+}
+.leftimg {
+    float:left;
+    margin: 7px 7px 7px 0;
+   }
+.rightimg  {
+    float: right;
+    margin: 7px 0 7px 7px;
+  }
+.icon {
   margin-right: 2%;
   color: var(--smokyBlack);
 }
@@ -330,6 +340,8 @@ margin-left: 3rem;
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--rust);
+  text-align: center;
+  text-indent: inherit;
 }
 @media (max-width: 575.98px){
 
@@ -349,6 +361,8 @@ width: 100%
   .contact-item__text{
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
+    text-indent: inherit;
   }
   .contact-map{
     align-self: center;
