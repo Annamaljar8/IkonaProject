@@ -26,12 +26,19 @@ p{
   font-size: larger;
   list-style: none;
 }
+ul{
+  color: var(--rufous);
+  font-size: larger;
+  list-style: none;
+  text-align: start;
+}
 .text{
   color: var(--rufous);
   text-align: center;
   font-size: larger;
 
 }
+
 .leftimg {
     float:left;
     margin: 7px 7px 7px 0;
