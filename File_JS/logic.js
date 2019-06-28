@@ -53,7 +53,7 @@ UI.prototype.showModal=function (event) {
   const modalItem=document.querySelector('.work-modal__item');
   modal.classList.add('work-modal__show');
   //modal.classList.remove('work-modal');
-  modalItem.style.backgroundImage = `url(Icona_Image/icona_work_${id}.jpg)`;
+  modalItem.style.backgroundImage = `url(Icona_Image/icons_front/icons_front_${id}.jpg)`;
 }
 //hide modal
 UI.prototype.closeModal = function(){

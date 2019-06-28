@@ -145,7 +145,7 @@ text-align: left;
 }
 @media (max-width: 768px){
   .intro{
-    background-image: url("../Icona_Image/importance1.jpg");
+    background-image: url("../Icona_Image/slide/slide_mobile_33.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -257,9 +257,9 @@ text-align: left;
   display: none;
 }
 .work-modal__item{
-  background: url('../Icona_Image/icona_work_8.jpg') center / cover;
-  height: 80%;
-  width: 60%;
+  background: url('../Icona_Image/icons_front/icons_front_18.jpg') center / cover;
+  height: 100%;
+  width: 40%;
   border: 0.5rem solid var(--brightYellow);
   border-radius: 0.4rem;
 }
