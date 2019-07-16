@@ -60,7 +60,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="school_life.html">О Нас</a>
-          <a class="dropdown-item" href="#">Работы Учеников</a>
+          <a class="dropdown-item" href="pupil_work.html">Работы Учеников</a>
           <a class="dropdown-item" href="#">Aбитуриенту</a>
         </div>
       </li>
@@ -73,189 +73,170 @@
 </header>
 <!-- about school section-->
 <div class="container">
-
-        <div class="shool_life_wrapper">
-            <div class="img_1">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_1.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_2">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_2.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_3">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_3.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_4">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_4.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_5">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_5.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_6">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_6.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_7">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_7.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_8">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_8.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_9">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_9.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_10">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_10.jpg"
-                       alt="Card image cap">
-            </div>
-            <div class="img_11">
-                <img
-                       class="img_i lazy"
-                       src="../Icona_Image/source.gif"
-                       data-src="../Icona_Image/workshop_life/workshop_life_11.jpg"
-                       alt="Card image cap">
-            </div>
-         </div>
-
-</div>
-
-
-
-<!--Footer-->
-<footer class="footer">
-  <div class="content-wrap">
-    <p class="text">KharitonIT 2018</p>
-    <hr>
-
-  </div>
-</footer>
-<script src="../File_JS/form_submit.js"></script>
-<script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script>
-    var lazy = document.getElementsByClassName('lazy');
-
-    for(var i=0; i<lazy.length; i++){
-    lazy[i].src = lazy[i].getAttribute('data-src');
-    }
-</script>
-
-<style>
-    .shool_life_wrapper {
-        margin: 40px;
-        display: grid;
-        grid-template-columns: repeat(4, [col] 25% ) ;
-        grid-template-rows: repeat(4, [row] auto  );
-        grid-gap: 10px;
-        /*grid-template-areas:
-          "image_1 image_2 image_3"
-          "image_4 image_5 image_6"
-          "image_7 image_8"
-          "image_9 image_10";*/
-    }
-    .img_i{
-        width: 100%;
-    }
-    .img_1 {
-        grid-column: col / span 1;
-        grid-row: row;
-    }
-    .img_2  {
-        grid-column: col 2 / span 1;
-        grid-row: row;
-    }
-    .img_3{
-        grid-column: col 3 / span 2;
-        grid-row: row;
-    }
-    .img_4{
-        grid-column: col / span 1;
-        grid-row: row 2;
-    }
-    .img_5{
-        grid-column: col 2 / span 2;
-        grid-row: row 2;
-    }
-    .img_6{
-        grid-column: col 4 / span 1;
-        grid-row: row 2;
-    }
-    .img_7{
-        grid-column: col / span 2;
-        grid-row: row 3;
-    }
-    .img_8{
-        grid-column: col 3 / span 2;
-        grid-row: row 3;
-    }
-    .img_9{
-        grid-column: col / span 2;
-        grid-row: row 4;
-    }
-    .img_10{
-        grid-column: col  3/ span 2;
-        grid-row: row 4;
-    }
+        <h1>Иконописная Мастерская</h1>
+            <ul class="img_list">
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_1.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_2.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_3.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_4.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_5.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_6.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_7.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_8.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_9.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_10.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img
+                           class="img_i lazy"
+                           src="../Icona_Image/source.gif"
+                           data-src="../Icona_Image/workshop_life/workshop_life_11.jpg"
+                           alt="Card image cap">
+                    </figure>
+                </li>
+            </ul>
+    </div>
 
 
-    @media (max-width: 767.98px){
-        .shool_life_wrapper {
-            display: flex;
-            flex-wrap: wrap-reverse;
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="content-wrap">
+        <p class="text">KharitonIT 2018</p>
+        <hr>
+
+      </div>
+    </footer>
+    <script src="../File_JS/form_submit.js"></script>
+    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        var lazy = document.getElementsByClassName('lazy');
+
+        for(var i=0; i<lazy.length; i++){
+        lazy[i].src = lazy[i].getAttribute('data-src');
         }
-    }
-    @media (max-width: 575.98px){
-        .shool_life_wrapper {
-            display: flex;
-            flex-wrap: wrap;
+    </script>
+
+    <style>
+        .img_list {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+              grid-template-rows: repeat(6, 200px);
+              grid-gap: 1rem;
+              grid-auto-flow: dense;
+          }
+          li:nth-child(3n) {
+              grid-column: span 2;
+              grid-row: span 2;
+            }
+
+        li:nth-child(6n) {
+              grid-column: span 3;
+              grid-row: span 3;
+            }
+
+        figure {
+              height: 100%;
+            }
+
+        img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+        @media (max-width: 575.98px){
+
+            .img_list {
+                display: flex;
+                flex-wrap: wrap;
+              }
         }
-
-        .img_i {
-            padding: 10px;
-        }
-
-
-    }
+    </style>
 </style>
 
 </body>
