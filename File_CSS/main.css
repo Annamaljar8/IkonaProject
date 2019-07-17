@@ -72,9 +72,9 @@ h1{
 
 @media (max-width: 575.98px){
 hr {
-margin-left: 35%;
-margin-top: 0;
-width: 100px;
+    margin-left: 35%;
+    margin-top: 0;
+    width: 100px;
 }
 h1{
  font-size: 1.5em;
@@ -457,6 +457,7 @@ width: 100%
   background: var(--frenchPuce);
   color: var(--brightYellow);
   text-transform: capitalize;
+  height: 37rem;
 }
 .order-form{
   text-align: center;
