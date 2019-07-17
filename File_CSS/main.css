@@ -34,8 +34,7 @@ ul{
 }
 hr {
   border: 2px solid #ffffff;
-  width: 215px;
-  margin-left: 42%;
+  width: 15%;
   margin-top: 0;
 }
 h1{
@@ -153,6 +152,8 @@ text-align: left;
 }
 .content-wrap{
   padding-top: 1rem;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 .carousel-item{
   height: 100%;
